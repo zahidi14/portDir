@@ -23,6 +23,11 @@ $h6-fontsize: 1.15rem !default;
   max-width: 1280px;
   width: 90%;
 }
+.row{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
 .header{
     display: block;
     line-height: 2;
@@ -117,6 +122,7 @@ header{
 }
 
 section#project{
+    padding: 20px 0;
     background-color: $green2;
     .card-wrap{
         display: flex;
@@ -126,7 +132,15 @@ section#project{
         .col{
             flex: 30%;
             max-width: 30%;
-           
+            .advGen{
+                background: url(/portresp/images/advice.png) no-repeat center;
+            }
+            .book{
+                background: url(/portresp/images/bookfm.png) no-repeat center;
+            }
+            .fm{
+                background: url(/portresp/images/fm1.png) no-repeat center;
+            }
            
             }
         

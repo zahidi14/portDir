@@ -14,6 +14,12 @@
   width: 90%;
 }
 
+.row {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
 .header {
   display: block;
   line-height: 2;
@@ -96,6 +102,7 @@ header .front {
 }
 
 section#project {
+  padding: 20px 0;
   background-color: #2CAEA5;
 }
 section#project .card-wrap {
@@ -106,6 +113,15 @@ section#project .card-wrap {
 section#project .card-wrap .col {
   flex: 30%;
   max-width: 30%;
+}
+section#project .card-wrap .col .advGen {
+  background: url(/portresp/images/advice.png) no-repeat center;
+}
+section#project .card-wrap .col .book {
+  background: url(/portresp/images/bookfm.png) no-repeat center;
+}
+section#project .card-wrap .col .fm {
+  background: url(/portresp/images/fm1.png) no-repeat center;
 }
 section#project .hov-card {
   width: 100%;
