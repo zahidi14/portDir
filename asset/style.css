@@ -17,7 +17,7 @@
 .row {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 20px;
+  margin-bottom: 0;
 }
 
 .header {
@@ -63,6 +63,25 @@ header .front {
   background-position: center;
 }
 
+@media only screen and (min-width: 800px) {
+  header nav {
+    display: flex;
+    justify-content: flex-end;
+  }
+  header nav .resp-nav, header nav .logo, header nav ul li {
+    align-self: center;
+  }
+  header nav ul {
+    margin-left: auto;
+  }
+  header nav ul li {
+    display: inline-block;
+    padding: 0 10px;
+  }
+  header nav .resp-nav {
+    display: none;
+  }
+}
 .about {
   width: 100%;
   background: #2DB2A9;
@@ -101,6 +120,13 @@ header .front {
   height: 237px;
 }
 
+@media only screen and (max-width: 800px) {
+  .cardCont {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
 section#project {
   padding: 20px 0;
   background-color: #2CAEA5;
@@ -122,6 +148,15 @@ section#project .card-wrap .col .book {
 }
 section#project .card-wrap .col .fm {
   background: url(/portresp/images/fm1.png) no-repeat center;
+}
+section#project .card-wrap .col .fylo {
+  background: url(/portresp/images/fylo.png) no-repeat center;
+}
+section#project .card-wrap .col .hud {
+  background: url(/portresp/images/hud.png) no-repeat center;
+}
+section#project .card-wrap .col .intro {
+  background: url(/portresp/images/intro.png) no-repeat center;
 }
 section#project .hov-card {
   width: 100%;
@@ -158,31 +193,7 @@ section#project .hov-card:hover .card-content {
   display: block;
 }
 
-@media only screen and (min-width: 800px) {
-  header nav {
-    display: flex;
-    justify-content: flex-end;
-  }
-  header nav .resp-nav, header nav .logo, header nav ul li {
-    align-self: center;
-  }
-  header nav ul {
-    margin-left: auto;
-  }
-  header nav ul li {
-    display: inline-block;
-    padding: 0 10px;
-  }
-  header nav .resp-nav {
-    display: none;
-  }
-}
 @media only screen and (max-width: 800px) {
-  .cardCont {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
   .card-wrap .col {
     flex: 50%;
     max-width: 50%;
