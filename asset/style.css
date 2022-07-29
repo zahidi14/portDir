@@ -1,0 +1,176 @@
+@import url(https://fonts.googleapis.com/css?family=Rubik&display=swap);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+  font-family: "Rubik", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 90%;
+}
+
+.header {
+  display: block;
+  line-height: 2;
+  text-align: center;
+}
+
+header nav {
+  width: 100%;
+  height: 150px;
+  align-items: center;
+  position: fixed;
+  padding: 0 7em;
+  z-index: 1;
+  transition: all 1s;
+}
+header nav .logo img {
+  width: 56px;
+  height: 56px;
+}
+header nav ul {
+  list-style: none;
+  text-transform: uppercase;
+}
+header nav ul li a {
+  text-decoration: none;
+  font-weight: bold;
+}
+header nav ul li a:hover {
+  color: #D0F9F1;
+}
+header nav.scroll {
+  height: 56px;
+  padding: 0 2.5em;
+  background-color: #FFF;
+}
+header .front {
+  height: 700px;
+  max-width: 100%;
+  background-color: #D0F9F1;
+  background-size: cover;
+  background-position: center;
+}
+
+.about {
+  width: 100%;
+  background: #2DB2A9;
+  height: 700px;
+  color: #D0F9F1;
+}
+.about .prof {
+  padding: 30px 0;
+  text-align: center;
+}
+.about .tite {
+  margin: 15px 0;
+}
+.about .cardCont {
+  float: left;
+  width: 33%;
+  padding: 0 10px;
+}
+.about .cardRow {
+  display: flex;
+  margin: 0 -5px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.about .cardRow :after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.about .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #0F6166;
+  height: 237px;
+}
+
+section#project {
+  background-color: #2CAEA5;
+}
+section#project .card-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+section#project .card-wrap .col {
+  flex: 30%;
+  max-width: 30%;
+}
+section#project .hov-card {
+  width: 100%;
+  height: 300px;
+}
+section#project .hov-card .card-content {
+  color: #D0F9F1;
+  display: none;
+  text-align: center;
+  background-color: #0F6166;
+  z-index: 1;
+  line-height: 2;
+  height: 100%;
+  padding: 1.5em;
+}
+section#project .hov-card .card-content button {
+  border-radius: 5px;
+  background-color: #2DB2A9;
+  border: 2px solid #D0F9F1;
+  margin-top: 4em;
+}
+section#project .hov-card .card-content button:hover {
+  background-color: #D0F9F1;
+  color: #2DB2A9;
+}
+section#project .hov-card .card-content h3 {
+  font-weight: bold;
+}
+section#project .hov-card .card-content h4 {
+  color: rgb(10, 90, 155);
+  font-size: 22px;
+}
+section#project .hov-card:hover .card-content {
+  display: block;
+}
+
+@media only screen and (min-width: 800px) {
+  header nav {
+    display: flex;
+    justify-content: flex-end;
+  }
+  header nav .resp-nav, header nav .logo, header nav ul li {
+    align-self: center;
+  }
+  header nav ul {
+    margin-left: auto;
+  }
+  header nav ul li {
+    display: inline-block;
+    padding: 0 10px;
+  }
+  header nav .resp-nav {
+    display: none;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .cardCont {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+  .card-wrap .col {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
