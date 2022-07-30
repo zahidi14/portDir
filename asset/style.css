@@ -21,9 +21,11 @@
 }
 
 .header {
+  margin-top: 50px;
   display: block;
   line-height: 2;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 header nav {
@@ -128,8 +130,9 @@ header .front {
   }
 }
 section#project {
+  color: white;
   padding: 20px 0;
-  background-color: #2CAEA5;
+  background-color: #228f88;
 }
 section#project .card-wrap {
   display: flex;
@@ -163,16 +166,19 @@ section#project .hov-card {
   height: 300px;
 }
 section#project .hov-card .card-content {
-  color: #D0F9F1;
+  color: white;
   display: none;
   text-align: center;
-  background-color: #0F6166;
+  background-color: rgba(22, 87, 82, 0.9058823529);
   z-index: 1;
   line-height: 2;
   height: 100%;
   padding: 1.5em;
 }
 section#project .hov-card .card-content button {
+  color: white;
+  width: 60px;
+  height: 35px;
   border-radius: 5px;
   background-color: #2DB2A9;
   border: 2px solid #D0F9F1;
@@ -184,10 +190,19 @@ section#project .hov-card .card-content button:hover {
 }
 section#project .hov-card .card-content h3 {
   font-weight: bold;
+  height: 70px;
+  width: auto;
 }
 section#project .hov-card .card-content h4 {
-  color: rgb(10, 90, 155);
+  color: rgb(255, 255, 255);
   font-size: 22px;
+  height: 50px;
+  width: auto;
+}
+section#project .hov-card .card-content p {
+  height: 40px;
+  width: auto;
+  line-height: 1.5;
 }
 section#project .hov-card:hover .card-content {
   display: block;
