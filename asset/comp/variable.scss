@@ -1,10 +1,13 @@
 $backg: #D0F9F1;
 $green1: #0F6166;
 $backg2: #2DB2A9;
-$backg3: #165752;
+$backg3: #25968e;
+$backg4: #208b84;
 $green2: #228f88;
 $green3: #165752;
 $green3: #165752e7;
+$darkgreen: #0c2b28;
+$dark: #1a6661;
 
 @import url(https://fonts.googleapis.com/css?family=Rubik&display=swap);
 
@@ -28,7 +31,7 @@ $green3: #165752e7;
     margin-bottom: 0;
 }
 .header{
-    margin-top: 50px;
+    margin-top: 20px;
     display: block;
     line-height: 2;
     text-align: center;

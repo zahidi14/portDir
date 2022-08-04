@@ -1,3 +1,49 @@
 section#contact{
-    background-color: $backg3;
+    background-color: $backg4;
+    width: auto;
+    height: auto;
+    padding: 2em;
+    text-align: center;
+    color: #fff;
+    form{
+        display: block;
+        
+        input[type=text]{
+            height: 50px;
+            width: 400px;
+            border: 1px solid $green3;
+            padding: 2em;
+            border-radius: 12px;
+            margin: .5em auto;
+        }
+        textArea{
+            height: 150px;
+            width: 400px;
+            border: 1px solid $green3;
+            padding: 2em;
+            border-radius: 12px;
+            margin: .5em auto;
+            box-sizing: border-box;
+            resize: none;
+        }
+        button{
+            margin: .5em auto;
+        }
+        input[type=text]:focus{
+            border: 2px solid $green3;
+        }
+    }
+    button{
+        color: white;
+        width: 60px;
+        height: 35px;
+        border-radius: 5px;
+        background-color: $backg2;
+        border: 2px solid $backg;
+        margin-top: 4em;
+    }
+    button:hover{
+        background-color: $backg;
+        color: $backg2;
+    }
 }
