@@ -290,6 +290,7 @@ footer .copyright {
 }
 footer button {
   height: 70px;
+  width: 70px;
   margin: 5px;
   font-size: 1.25em;
   font-weight: bold;
@@ -297,16 +298,20 @@ footer button {
   text-transform: uppercase;
   position: relative;
   border: 0.1875em solid;
-  padding: 1em;
   color: #D0F9F1;
   background: #D0F9F1;
-  border-radius: 0.125em;
   transition: background 0.3s;
-  border-radius: 50px;
+  border-radius: 15px;
 }
 footer button:hover, footer button:focus {
-  color: #0F6166;
-  background: #D0F9F1;
+  color: #1a6661;
+  background: #0c2b28;
+}
+footer button svg {
+  fill: #000;
+}
+footer button svg:hover, footer button svg:focus {
+  fill: #fff;
 }
 footer button:active {
   top: 0.08em;

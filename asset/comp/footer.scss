@@ -27,6 +27,7 @@ footer{
     }
     button {
         height: 70px;
+        width: 70px;
         margin: 5px;
         font-size: 1.25em;
         font-weight: bold;
@@ -34,19 +35,27 @@ footer{
         text-transform: uppercase;
         position: relative;
         border: .1875em solid;
-        padding: 1em;
+        // padding: 1em;
         color:$backg;
         background: $backg;
-        border-radius: .125em;
+        
         transition: background .3s;
-        border-radius: 50px;
+        border-radius: 15px;
         &:hover,
         &:focus {
-            color: $green1;
-            background:$backg;
+            color: $dark;
+            background:$darkgreen;
+           
            
         }
-        
+        svg{
+            fill: #000;
+            &:hover,
+            &:focus{
+                fill: #fff;                
+                
+            }
+        }
         &:active {
             top: .08em;
         }
