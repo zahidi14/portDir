@@ -19,12 +19,12 @@ header{
             text-transform: uppercase;
             li{
                 a{
-                    // color: @GrayishBlue;
+                    color: $dark;
                     text-decoration: none;
                     font-weight: bold;
                 }
                 a:hover{
-                    color: $backg;
+                    color: $green2;
                 }
             }
         }
@@ -33,7 +33,14 @@ header{
     nav.scroll{
         height: 56px;
         padding: 0 2.5em;
-        background-color: #FFF;
+        background-color: $dark;
+        li{
+            a{
+                color: $backg;
+            }
+            
+    
+        }
     }
     .front{
         height: 700px;

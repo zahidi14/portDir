@@ -45,16 +45,18 @@ section#project{
             line-height: 2;
             height: 100%;
             padding: 1.5em;
-            button{
+            a{
                 color: white;
-                width: 60px;
-                height: 35px;
+                width: 115px;
+                height: 25px;
                 border-radius: 5px;
                 background-color: $backg2;
                 border: 2px solid $backg;
                 margin-top: 4em;
+                text-decoration : none;
+                padding : 4px;
             }
-            button:hover{
+            a:hover{
                 background-color: $backg;
                 color: $backg2;
             }

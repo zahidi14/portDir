@@ -46,16 +46,20 @@ header nav ul {
   text-transform: uppercase;
 }
 header nav ul li a {
+  color: #1a6661;
   text-decoration: none;
   font-weight: bold;
 }
 header nav ul li a:hover {
-  color: #D0F9F1;
+  color: #228f88;
 }
 header nav.scroll {
   height: 56px;
   padding: 0 2.5em;
-  background-color: #FFF;
+  background-color: #1a6661;
+}
+header nav.scroll li a {
+  color: #D0F9F1;
 }
 header .front {
   height: 700px;
@@ -175,16 +179,18 @@ section#project .hov-card .card-content {
   height: 100%;
   padding: 1.5em;
 }
-section#project .hov-card .card-content button {
+section#project .hov-card .card-content a {
   color: white;
-  width: 60px;
-  height: 35px;
+  width: 115px;
+  height: 25px;
   border-radius: 5px;
   background-color: #2DB2A9;
   border: 2px solid #D0F9F1;
   margin-top: 4em;
+  text-decoration: none;
+  padding: 4px;
 }
-section#project .hov-card .card-content button:hover {
+section#project .hov-card .card-content a:hover {
   background-color: #D0F9F1;
   color: #2DB2A9;
 }
@@ -288,9 +294,9 @@ footer .copyright {
   padding: 0.5em;
   color: aliceblue;
 }
-footer button {
-  height: 70px;
-  width: 70px;
+footer .button {
+  display: inline-block;
+  padding: 5px;
   margin: 5px;
   font-size: 1.25em;
   font-weight: bold;
@@ -303,17 +309,17 @@ footer button {
   transition: background 0.3s;
   border-radius: 15px;
 }
-footer button:hover, footer button:focus {
+footer .button:hover, footer .button:focus {
   color: #1a6661;
   background: #0c2b28;
 }
-footer button svg {
+footer .button svg {
   fill: #000;
 }
-footer button svg:hover, footer button svg:focus {
+footer .button svg:hover, footer .button svg:focus {
   fill: #fff;
 }
-footer button:active {
+footer .button:active {
   top: 0.08em;
 }
 footer .svg-icon {
