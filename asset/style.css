@@ -148,16 +148,16 @@ section#project .card-wrap .col {
   max-width: 30%;
 }
 section#project .card-wrap .col .advGen {
-  background: url(/portresp/images/advice.png) no-repeat center;
+  background: url(/images/advice.png) no-repeat center;
 }
 section#project .card-wrap .col .book {
-  background: url(/portresp/images/bookfm.png) no-repeat center;
+  background: url(/mages/bookfm.png) no-repeat center;
 }
 section#project .card-wrap .col .fm {
-  background: url(/portresp/images/fm1.png) no-repeat center;
+  background: url(/images/fm1.png) no-repeat center;
 }
 section#project .card-wrap .col .fylo {
-  background: url(/portresp/images/fylo.png) no-repeat center;
+  background: url(/images/fylo.png) no-repeat center;
 }
 section#project .card-wrap .col .hud {
   background: url(/portresp/images/hud.png) no-repeat center;
@@ -188,7 +188,7 @@ section#project .hov-card .card-content a {
   border: 2px solid #D0F9F1;
   margin-top: 4em;
   text-decoration: none;
-  padding: 4px;
+  padding: 8px;
 }
 section#project .hov-card .card-content a:hover {
   background-color: #D0F9F1;
