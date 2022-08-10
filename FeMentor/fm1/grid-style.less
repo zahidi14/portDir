@@ -1,0 +1,262 @@
+@desatured-red : hsl(0, 36%, 70%);
+@soft-red : hsl(0, 93%, 68%);
+@dark-grey : hsl(0, 6%, 24%);
+@gradient1 : linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+@gradient2 : linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+
+@body-font : 16px;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    font-family: 'Josefin Sans', sans-serif;
+   
+    font-size: @body-font;
+}
+
+.content {
+    background-image: url(images/bg-pattern-desktop.svg);
+    background-color: @gradient1;
+
+    .top { 
+        
+        
+        }
+    .pic {
+       
+        }
+    .mid {
+       
+        .head{
+            color: @desatured-red;
+            font-variant: all-petite-caps;
+            font-weight: 100;
+            font-size: 4.5em;
+            line-height: 50px;
+            letter-spacing: 0.153em;
+            font-weight: 100;
+        }
+        .head2{
+            color: @dark-grey;
+            font-weight: 700;
+            font-variant: all-small-caps;
+            font-size: 4.500em;
+            line-height: 61px;
+            letter-spacing: 0.183em;    
+        }
+    }
+    .text {
+       
+        color: @desatured-red;
+        form{
+
+            input ,button{
+                vertical-align: middle;
+            }
+            margin-top:20px;
+            input[type=text].email{
+                border: 1px solid  @desatured-red;
+                width: 90%;
+                border-radius: 30px;
+                height: 50px;
+                padding: 0 25px;
+            
+                
+            
+            }
+            input[type=text].email:focus{
+                border: 3px solid @desatured-red;
+            
+            }
+
+            input[type=text].error{
+                background: url(images/icon-error.svg) no-repeat scroll 293px 10px;
+                border: 3px solid @soft-red;
+            
+            }
+            button.btn{
+                width: 20%;
+                background-image: @gradient2;
+                border-radius: 29px;
+                height: 50px;
+                margin-left: -78px;
+            z-index: 1;
+            }
+            button.btn:hover{
+                background-image: @desatured-red;
+                
+            }
+            #alert{
+                color: @desatured-red;
+                padding: 4px 26px;
+                
+                .hide{
+                    visibility: hidden;
+                }
+                
+            }
+        }
+
+    }
+    footer{
+       
+        .attribution{
+            text-align: center;
+            bottom: 0;
+            
+            left: 12%;
+            font-size: 11px; text-align: center;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 800px){
+    .content{
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        grid-template-rows: 1fr 1.5fr repeat(2, 1fr);
+       
+        grid-row-gap: 10px; 
+
+        .top { 
+            grid-area: ~"1 / 1 / 2 / 2";
+            padding: 5em 0 0 10em;
+            
+            }
+        .pic {
+            grid-area: ~"1 / 2 / 5 / 3";
+                img{
+                    height: 100%;
+                }
+            }
+        .mid {
+            grid-area: ~"2 / 1 / 3 / 2";
+            padding: 4em 3em 0 10em;
+          
+        }
+        .text {
+            grid-area: ~"3 / 1 / 4 / 2";
+            padding:2em 9em 0 10em;
+           
+            }
+
+        }
+        footer{
+            grid-area: ~"4 / 1 / 5 / 2";
+          
+        }
+
+    }
+
+
+
+
+@media only screen and  (max-width: 799px) {
+    .content{
+        display: block;
+        .top { 
+            padding: 50px 0;
+           text-align: center;            
+            }
+        .pic {
+            margin: 0;
+            img{
+                max-width: 100%;
+                height: 50%;
+                right: 0;
+                left: 0;
+            }
+            }
+        .mid {
+           padding: 50px;
+           text-align: center;
+        }
+        .text {
+            padding: 92px;
+            text-align: center;
+           
+           justify-content: center;
+            }
+
+        }
+        footer{
+           
+          
+        }
+    }
+
+
+    
+
+    
+
+
+/*header{
+    display: grid;
+    grid-template-areas: 
+  'content pic';
+
+    .content{
+        background-image: url(images/bg-pattern-desktop.svg);
+        background-size: cover;
+        background-color: @gradient2;
+        padding: 5em 10em;
+        grid-area: content;
+        .top{ 
+            grid-area: logo;
+            
+            }
+        
+        .mid{ 
+            grid-area: head;
+            padding-right: 290px;
+            font-size: 72px;
+            line-height: 80px;
+            letter-spacing: 10px;
+            .head{
+                color: @desatured-red;
+                font-variant: all-petite-caps;
+                font-weight: 100;
+             
+                }
+            .head2{
+                color: @dark-grey;
+                font-variant: all-small-caps;
+                font-weight: 700;    
+                }
+            }
+        
+        .text{ 
+            grid-area: desc; 
+            
+            
+            }
+        
+        .form{ 
+            
+            grid-area: input;
+            }
+        
+      
+
+        input[type=text].email{
+            border: 1px solid  @desatured-red;
+            width: 50%;
+            border-radius: 30px;
+            height: 50px;
+            padding: 0 25px;
+            
+        }
+        input[type=text].email:focus{
+            border: 3px solid @soft-red;
+            
+            
+        }
+    }
+    .pic{ 
+        grid-area: pic;
+        }
+}*/

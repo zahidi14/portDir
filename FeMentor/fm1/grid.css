@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+}
+.content {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-template-rows: 1fr 1.5fr repeat(2, 1fr);
+  grid-row-gap: 10px;
+}
+.content .top {
+  grid-area: 1 / 1 / 2 / 2;
+  padding: 5em 0 0 10em;
+}
+.content .pic {
+  grid-area: 1 / 2 / 5 / 3;
+}
+.content .mid {
+  grid-area: 2 / 1 / 3 / 2;
+  padding: 4em 3em 0 10em;
+}
+.content .mid .head {
+  color: #ce9797;
+  font-variant: all-petite-caps;
+  font-size: 4.5em;
+  line-height: 50px;
+  letter-spacing: 0.153em;
+  font-weight: 100;
+}
+.content .mid .head2 {
+  color: #413a3a;
+  font-weight: 700;
+  font-variant: all-small-caps;
+  font-size: 4.500em;
+  line-height: 61px;
+  letter-spacing: 0.183em;
+}
+.content .text {
+  grid-area: 3 / 1 / 4 / 2;
+  padding: 2em 13em 0 10em;
+  color: #ce9797;
+}
+.content .text form {
+  margin-top: 20px;
+}
+.content .text form input[type=text].email {
+  border: 1px solid #ce9797;
+  width: 90%;
+  border-radius: 30px;
+  height: 50px;
+  padding: 0 25px;
+}
+.content .text form input[type=text].email:focus {
+  border: 3px solid #ce9797;
+}
+.content .text form button.btn {
+  width: 20%;
+  background-color: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  border-radius: 29px;
+  height: 50px;
+  margin-left: -78px;
+  z-index: 1;
+}
+.content .text form button.btn:hover {
+  background-color: #ce9797;
+}
+/*header{
+    display: grid;
+    grid-template-areas: 
+  'content pic';
+
+    .content{
+        background-image: url(images/bg-pattern-desktop.svg);
+        background-size: cover;
+        background-color: @gradient2;
+        padding: 5em 10em;
+        grid-area: content;
+        .top{ 
+            grid-area: logo;
+            
+            }
+        
+        .mid{ 
+            grid-area: head;
+            padding-right: 290px;
+            font-size: 72px;
+            line-height: 80px;
+            letter-spacing: 10px;
+            .head{
+                color: @desatured-red;
+                font-variant: all-petite-caps;
+                font-weight: 100;
+             
+                }
+            .head2{
+                color: @dark-grey;
+                font-variant: all-small-caps;
+                font-weight: 700;    
+                }
+            }
+        
+        .text{ 
+            grid-area: desc; 
+            
+            
+            }
+        
+        .form{ 
+            
+            grid-area: input;
+            }
+        
+      
+
+        input[type=text].email{
+            border: 1px solid  @desatured-red;
+            width: 50%;
+            border-radius: 30px;
+            height: 50px;
+            padding: 0 25px;
+            
+        }
+        input[type=text].email:focus{
+            border: 3px solid @soft-red;
+            
+            
+        }
+    }
+    .pic{ 
+        grid-area: pic;
+        }
+}*/

@@ -1,0 +1,134 @@
+// ### Primary
+
+$LightCyan: hsl(193, 38%, 86%);
+$NeonGreen: hsl(150, 100%, 66%);
+
+// ### Neutral
+
+$GrayishBlue: hsl(217, 19%, 38%);
+$DarkGrayish:hsl(217, 19%, 24%);
+$DarkBlue: hsl(218, 23%, 16%);
+
+// ## Typography
+
+// ### Body Copy
+
+$quote: 28px;
+
+// ### Font
+
+@import url(https://fonts.google.com/specimen/Manrope);
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    border:0;
+    font-weight: 800;
+    font-family: 'Manrope', sans-serif;
+    scroll-behavior: smooth;
+    // background-color: $DarkBlue;
+}
+
+.main{
+    top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: $DarkBlue;
+  position: absolute;
+  z-index: -2;
+}
+
+.btn{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 0;
+    background-color: $NeonGreen;
+    text-align: center;
+    display: inline-block;
+    position: fixed;
+    left: 50%;
+    bottom: -70px;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    transition: all 0.2s ease-in-out;
+    :hover{
+        color:hsl(150, 100%, 80%);
+        box-shadow: 0 0 20px  10px;
+		// inset 1px 1px 0px rgba(255,255,255,0.25);
+        cursor: pointer;
+    }
+}
+.container{
+        background-color: $DarkGrayish;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius:4%;
+        display: block;
+        text-align: center;
+        .adv{
+            color: $LightCyan;
+            font-size: $quote;
+            position: relative;
+            
+        }
+        h3{
+            background-color: $DarkGrayish;
+            color: $NeonGreen;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+        
+        .divider{
+            
+            left: 50%;
+            bottom: 50px;
+            transform: translate(-50%, -50%);
+            margin: 0 auto;
+            position: absolute;
+        }
+}
+.attribution{
+    font-size: 10px;
+    position: fixed;
+    left: 50%;
+    bottom: 0px;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    color: aliceblue;
+}
+@media only screen and (min-width: 375px) {
+    .container{
+            position: fixed;
+            width: 375px;
+            height: 250px;
+            padding: 30px;
+            .adv{
+                top: 15%;
+            }
+        //   #divi{
+        //     width: 100%;
+        //     height: 100%;
+        //   }
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    
+    .container{
+        position: fixed;
+            width: 340px;
+            height: 340px;
+            padding:30px 10px;
+            .adv{
+                top: 25%;
+            }
+            // #divi{
+            //     width: 50%;
+            //     height: 90%;
+            //   }
+    }
+}
