@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body{
+    font-size: 16px;
+    
+    font-weight: 300;
+}
+
+header{
+    display: flex;
+
+}
+
+header .pic{
+    flex: 1;
+    padding: 0;
+}
+
+header .content{
+    flex: 1;
+    padding:5%;
+    background-image: url(images/bg-pattern-desktop.svg);
+    background-size: cover
+}
+
+
+
+header .content .head {
+	margin-top: 131px;
+	font-size: 78px;
+    font-weight: 100; 
+	color: hsl(0, 36%, 70%);
+	font-weight: 100;
+	font-variant: all-petite-caps;
+	line-height: 35px;
+	letter-spacing: 10px;
+}
+
+header .content .head2 {
+	margin-top: 10px;
+	/* margin-right: 65px; */
+	font-weight: bolder;
+	color: black;
+	font-size: 82px;
+	/* width: 62%; */
+	line-height: 77px;
+	letter-spacing: 11px;
+	font-variant: all-small-caps;
+}
+
+header .content .text{
+    color: hsl(0, 36%, 70%);
+    margin-top: 10px;
+    margin-left: 25px;
+    line-height: 23px;
+    letter-spacing: 0.05em;
+}
+
+.form{
+    margin-top: 30px;
+}
+
+input[type=text].email{
+    border: 1px solid  hsl(0, 36%, 70%);
+    width: 50%;
+    border-radius: 30px;
+    height: 50px;
+    padding: 0 25px;
+   
+}
+input[type=text].email:focus{
+    border: 3px solid hsl(0, 36%, 70%);
+   
+   
+}
