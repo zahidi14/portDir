@@ -1,0 +1,514 @@
+$primaryCol: #4A9EA1;
+$secondaryCol: #919191;
+$headCol: #313131;
+$border: #E1E1E1;
+
+
+@font-face {
+    font-family: 'Roobert TRIAL';
+    src: url(/assets/css/font/RoobertTRIAL-Regular.otf);
+}
+@font-face {
+    font-family: 'bold';
+    src: url(/assets/css/font/RoobertTRIAL-Bold.otf);
+}
+* {
+    font-family: 'Roobert TRIAL';
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+
+h1{
+    font-size: 25px;
+}
+h2{
+    font-size: 18px;
+    
+}
+p{
+    text-align: justify;
+}
+input{
+    border: solid 1px $border;
+    border-radius: 3px;
+    padding: 15px;
+}
+
+.hex{
+    width: 196px;
+    height: 47px;
+    border: solid 1px $border;
+    border-radius: 3px;
+    box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.25);
+    position: absolute;
+    top: 64px;
+    right: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $secondaryCol;
+    img{
+        width: 23px;
+        height: 23px;
+        margin-right: 7px;
+    }
+}
+
+
+
+
+
+    .sidebar{
+        width: 327px;
+        height: 100%;
+        position: fixed;
+        padding:64px 15px 0px 15px ;
+        text-align: center;
+        box-shadow: -2px 4px 15px -3px rgba(0,0,0,0.25);
+        .logo{
+            
+            img{
+                width: 40px;
+                height: 40px;
+                margin-bottom: 9px;
+            }
+            h1{
+                color: $primaryCol;
+                font-family: 'bold';
+            }
+        }
+        ul{
+            position: relative;
+            top: 58px;
+            list-style: none;
+            li{
+                width: 296px;
+                height: 54px;
+                color: $headCol;
+                display: flex;
+                align-items: center;
+                border-radius: 3px;
+                padding-left: 54px;
+                a{
+                    text-decoration: none;
+                    color: $headCol;
+                    
+                    padding: 17px auto;
+                   margin-left: 10px;
+                    
+                }
+                
+            }:hover > svg *,
+            :hover {
+                background-color: $primaryCol;
+                stroke: white;
+                a{
+                    color: white;
+                }
+            }.active > svg *, .active{
+                background-color: $primaryCol;
+                stroke: white;
+                a{
+                    color: white;
+                }
+            }
+        }
+    }
+    .container{
+        margin-left: 327px;
+        padding:152px 70px 70px;
+        width: auto;
+        position: relative;
+        overflow: auto;
+        z-index: 1;
+        h1{
+            text-decoration: underline 3px $primaryCol;
+            text-underline-offset: 12px;
+        }
+    }
+
+
+// ### Open Data Library Page ###
+
+.filter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 33px ;
+    .search{
+        
+        width: 391px;
+        height: 41px;
+        background-image: url(/assets/images/search.svg);
+        background-repeat: no-repeat;
+        background-position: 95% 50%;
+    }
+    .order{
+        width: 211px;
+        height: 41px;
+        background-color: white;
+        border: 1px solid $border;
+        color: $secondaryCol;
+        padding:10px 15px;
+        
+    }
+}
+
+.divBox{
+    border: solid 1px $border;
+    margin-top: 15px;
+    padding: 32px 24px;
+    border-radius: 3px;
+    p{
+        margin-top: 24px;
+        color: $secondaryCol;
+        text-align: justify;
+    }
+    a{
+        text-decoration: none;
+        display: inline-block;
+        width: 78px;
+        height: 25px;
+        background-color: $primaryCol;
+        color: white;
+        text-align: center;
+        line-height: 25px;
+        border-radius: 5px;
+        font-size: 14;
+        margin-top: 29px;
+    }
+    .editBox{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
+// ### Data Contribution Page ###
+.checkboxCont{
+    display: flex;
+    label{
+        color: $secondaryCol;
+    }
+    .checkbox{
+        margin-top: 17px;
+        display: block;
+        list-style: none;
+        li{
+            margin-top: 10px;
+            margin-right: 48px;
+        }
+        input[type=checkbox]{
+            width:19px;
+            height: 19px;
+           
+        }
+        input, label{
+            display: inline-block;
+            margin-top: 0px;
+        }
+       
+    }
+   }
+
+form{
+    .box{
+        border: solid 1px $border;
+        border-radius: 3px;
+        width: 37px;
+        height: 37px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        margin-left: 5px;}
+
+    margin-top: 50px;
+    input,label{
+        display: block;
+        
+    }
+    label{
+        margin-top: 23px;
+    }
+    input{
+        width: 513px;
+        height: 37px;
+        margin-top: 10px;
+       margin-right: 4px;
+       &.date{
+        width: 186px;
+        color: $secondaryCol;
+        
+    }
+    &.pub{
+        width: 405px;
+    }
+    }
+    .large{
+        height: 154px;
+    }
+   
+    .inline{
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        vertical-align:middle;
+        .cid{
+            width: 317px;
+    
+        }
+        .filename{
+            width: 194px;
+        }
+        span{
+            margin: 0 8px;
+        }
+        .short{
+            width: 128px;
+            height: 37px;
+        }
+        .medium{
+            width: 170px;
+        }
+        .long{
+            width: 207px;
+        }
+        .box{
+            border: solid 1px $border;
+            border-radius: 3px;
+            width: 37px;
+            height: 37px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+            margin-left: 5px;
+
+        }
+    }
+
+    .dropdown{
+        width: 511px;
+        height: 37px;
+        margin-top: 10px;
+       margin-right: 4px;
+       padding: 2px;
+       border-radius: 3px;
+       background-color: white;
+       border: 1px solid $border;
+       color: $secondaryCol;
+    }
+   .longButt{
+    width: 159px;
+   }
+    
+   
+    // .radioGroup{
+    //     float: left;
+    //     margin: 0 5px 0 0;
+    //     width: 100px;
+    //     height: 40px;
+    //     position: relative;
+        
+    //     label, input {
+    //     display: block;
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     right: 0;
+    //     bottom: 0;
+    //   }
+    //   input[type="radio"] {
+    //     opacity: 0.011;
+    //     z-index: 100;
+    //   }
+    //   input[type="radio"]:checked + label {
+    //     background: #20b8be;
+    //     border-radius: 4px;
+    //   }
+    //   label {
+    //     cursor: pointer;
+    //     z-index: 90;
+    //     line-height: 1.8em;
+    //   }
+      
+    // }
+    
+    
+    h2{
+        margin-top: 25px;
+        text-decoration: underline ;
+    }
+   .provider{
+    label{
+        color: $secondaryCol;
+    }
+   }
+
+   .formGrid{
+    display: flex;
+    label{
+        color: $secondaryCol;
+    }
+    .half{
+        width: 337px;
+    }
+    .left{
+        margin-right: 14px;
+    }
+   }
+
+   textarea{
+    width: 510px;
+    height: 166px;
+    box-sizing: border-box;
+    border: solid 1px $border;
+    border-radius: 3px;
+  
+  font-size: 16px;
+  resize: none;
+   }
+      
+}
+
+// ### Data Manager ###
+.calendar{
+    svg{
+        stroke: $secondaryCol;
+    }
+}
+.grey{
+    color: $secondaryCol;
+    margin-top: 35px;
+    margin-bottom: 45px;
+}
+.submit{
+    width: 103px;
+    height: 38px;
+    background-color: $primaryCol;
+    color: white;
+    border-radius: 3px;
+    margin-top: 47px;
+}
+
+
+
+
+// ### Data Individual Manager ###
+
+.individual{
+    .top{
+        p{
+            margin-top: 11px;
+            color: $secondaryCol;
+        }
+        h1{
+            text-decoration: none;
+        }
+        
+    }
+    h2{
+        text-decoration: underline;
+        font-weight: 100;
+        font-size: 16px;
+        margin: 11px 0;
+    }
+    .data{
+        margin-top: 28px;
+        margin-right: 209px;
+        p{
+            color: $secondaryCol;
+            margin-top: 4px;
+            margin-bottom: 22px;
+            text-align: justify ;
+            span{
+                color: #000;
+            }
+        }
+        .list{
+            margin-top: 11px;
+            color: $secondaryCol;
+            padding-left:15px ;
+            h2{
+                color: #000;
+               
+            }
+            ul{
+                margin: 11px 0 11px 0;
+               li{
+                margin-left: 25px;
+               }
+            }
+        }
+      
+    }
+    .details{
+        margin-top: 30px;
+        p{
+            margin-top: 11px;
+            span{
+                color: $secondaryCol;
+            }
+            
+        }
+        ul{
+            list-style: none;
+            li{
+                padding: 11px 0 0 11px;
+                color: $secondaryCol;
+            }
+            
+        }
+    }
+    .attribute{
+        margin-top:15px;
+        padding: 15px 0;
+    }
+    .minMaxAttr{
+        margin-bottom: 32px;
+        p{
+            margin-top: 10px;
+            color: $secondaryCol;
+        }
+    }
+    .down{
+        margin: 16px 0;
+    }
+    .fileBox{
+        
+        border: solid 1px $border;
+        border-radius: 3px;
+        display: flex;
+        padding: 20px 50px;
+        align-items: center;
+        background-image: url(/assets/images/file.svg);
+        background-repeat: no-repeat;
+        color: $secondaryCol;
+        &.short{
+            width: 287px;
+            height: 59px;
+            background-position: 5% 50%;
+        }
+        &.long{
+            width: 586px;
+            height: 59px;
+            background-position: 3% 50%;
+        }
+    }
+    .additional{
+        color: $secondaryCol;
+        line-height: 2em;
+    }
+    .copy{
+        margin-top: 16px;
+    }
+    
+}
+
+
+// ### Data Manager ###
+

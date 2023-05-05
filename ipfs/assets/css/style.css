@@ -1,0 +1,429 @@
+@font-face {
+  font-family: "Roobert TRIAL";
+  src: url(/assets/css/font/RoobertTRIAL-Regular.otf);
+}
+@font-face {
+  font-family: "bold";
+  src: url(/assets/css/font/RoobertTRIAL-Bold.otf);
+}
+* {
+  font-family: "Roobert TRIAL";
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+}
+
+h1 {
+  font-size: 25px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+p {
+  text-align: justify;
+}
+
+input {
+  border: solid 1px #E1E1E1;
+  border-radius: 3px;
+  padding: 15px;
+}
+
+.hex {
+  width: 196px;
+  height: 47px;
+  border: solid 1px #E1E1E1;
+  border-radius: 3px;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+  position: absolute;
+  top: 64px;
+  right: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #919191;
+}
+.hex img {
+  width: 23px;
+  height: 23px;
+  margin-right: 7px;
+}
+
+.sidebar {
+  width: 327px;
+  height: 100%;
+  position: fixed;
+  padding: 64px 15px 0px 15px;
+  text-align: center;
+  box-shadow: -2px 4px 15px -3px rgba(0, 0, 0, 0.25);
+}
+.sidebar .logo img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 9px;
+}
+.sidebar .logo h1 {
+  color: #4A9EA1;
+  font-family: "bold";
+}
+.sidebar ul {
+  position: relative;
+  top: 58px;
+  list-style: none;
+}
+.sidebar ul li {
+  width: 296px;
+  height: 54px;
+  color: #313131;
+  display: flex;
+  align-items: center;
+  border-radius: 3px;
+  padding-left: 54px;
+}
+.sidebar ul li a {
+  text-decoration: none;
+  color: #313131;
+  padding: 17px auto;
+  margin-left: 10px;
+}
+.sidebar ul :hover > svg *,
+.sidebar ul :hover {
+  background-color: #4A9EA1;
+  stroke: white;
+}
+.sidebar ul :hover > svg * a,
+.sidebar ul :hover a {
+  color: white;
+}
+.sidebar ul .active > svg *, .sidebar ul .active {
+  background-color: #4A9EA1;
+  stroke: white;
+}
+.sidebar ul .active > svg * a, .sidebar ul .active a {
+  color: white;
+}
+
+.container {
+  margin-left: 327px;
+  padding: 152px 70px 70px;
+  width: auto;
+  position: relative;
+  overflow: auto;
+  z-index: 1;
+}
+.container h1 {
+  -webkit-text-decoration: underline 3px #4A9EA1;
+          text-decoration: underline 3px #4A9EA1;
+  text-underline-offset: 12px;
+}
+
+.filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 33px;
+}
+.filter .search {
+  width: 391px;
+  height: 41px;
+  background-image: url(/assets/images/search.svg);
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+}
+.filter .order {
+  width: 211px;
+  height: 41px;
+  background-color: white;
+  border: 1px solid #E1E1E1;
+  color: #919191;
+  padding: 10px 15px;
+}
+
+.divBox {
+  border: solid 1px #E1E1E1;
+  margin-top: 15px;
+  padding: 32px 24px;
+  border-radius: 3px;
+}
+.divBox p {
+  margin-top: 24px;
+  color: #919191;
+  text-align: justify;
+}
+.divBox a {
+  text-decoration: none;
+  display: inline-block;
+  width: 78px;
+  height: 25px;
+  background-color: #4A9EA1;
+  color: white;
+  text-align: center;
+  line-height: 25px;
+  border-radius: 5px;
+  font-size: 14;
+  margin-top: 29px;
+}
+.divBox .editBox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.checkboxCont {
+  display: flex;
+}
+.checkboxCont label {
+  color: #919191;
+}
+.checkboxCont .checkbox {
+  margin-top: 17px;
+  display: block;
+  list-style: none;
+}
+.checkboxCont .checkbox li {
+  margin-top: 10px;
+  margin-right: 48px;
+}
+.checkboxCont .checkbox input[type=checkbox] {
+  width: 19px;
+  height: 19px;
+}
+.checkboxCont .checkbox input, .checkboxCont .checkbox label {
+  display: inline-block;
+  margin-top: 0px;
+}
+
+form {
+  margin-top: 50px;
+}
+form .box {
+  border: solid 1px #E1E1E1;
+  border-radius: 3px;
+  width: 37px;
+  height: 37px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+form input, form label {
+  display: block;
+}
+form label {
+  margin-top: 23px;
+}
+form input {
+  width: 513px;
+  height: 37px;
+  margin-top: 10px;
+  margin-right: 4px;
+}
+form input.date {
+  width: 186px;
+  color: #919191;
+}
+form input.pub {
+  width: 405px;
+}
+form .large {
+  height: 154px;
+}
+form .inline {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  vertical-align: middle;
+}
+form .inline .cid {
+  width: 317px;
+}
+form .inline .filename {
+  width: 194px;
+}
+form .inline span {
+  margin: 0 8px;
+}
+form .inline .short {
+  width: 128px;
+  height: 37px;
+}
+form .inline .medium {
+  width: 170px;
+}
+form .inline .long {
+  width: 207px;
+}
+form .inline .box {
+  border: solid 1px #E1E1E1;
+  border-radius: 3px;
+  width: 37px;
+  height: 37px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+form .dropdown {
+  width: 511px;
+  height: 37px;
+  margin-top: 10px;
+  margin-right: 4px;
+  padding: 2px;
+  border-radius: 3px;
+  background-color: white;
+  border: 1px solid #E1E1E1;
+  color: #919191;
+}
+form .longButt {
+  width: 159px;
+}
+form h2 {
+  margin-top: 25px;
+  text-decoration: underline;
+}
+form .provider label {
+  color: #919191;
+}
+form .formGrid {
+  display: flex;
+}
+form .formGrid label {
+  color: #919191;
+}
+form .formGrid .half {
+  width: 337px;
+}
+form .formGrid .left {
+  margin-right: 14px;
+}
+form textarea {
+  width: 510px;
+  height: 166px;
+  box-sizing: border-box;
+  border: solid 1px #E1E1E1;
+  border-radius: 3px;
+  font-size: 16px;
+  resize: none;
+}
+
+.calendar svg {
+  stroke: #919191;
+}
+
+.grey {
+  color: #919191;
+  margin-top: 35px;
+  margin-bottom: 45px;
+}
+
+.submit {
+  width: 103px;
+  height: 38px;
+  background-color: #4A9EA1;
+  color: white;
+  border-radius: 3px;
+  margin-top: 47px;
+}
+
+.individual .top p {
+  margin-top: 11px;
+  color: #919191;
+}
+.individual .top h1 {
+  text-decoration: none;
+}
+.individual h2 {
+  text-decoration: underline;
+  font-weight: 100;
+  font-size: 16px;
+  margin: 11px 0;
+}
+.individual .data {
+  margin-top: 28px;
+  margin-right: 209px;
+}
+.individual .data p {
+  color: #919191;
+  margin-top: 4px;
+  margin-bottom: 22px;
+  text-align: justify;
+}
+.individual .data p span {
+  color: #000;
+}
+.individual .data .list {
+  margin-top: 11px;
+  color: #919191;
+  padding-left: 15px;
+}
+.individual .data .list h2 {
+  color: #000;
+}
+.individual .data .list ul {
+  margin: 11px 0 11px 0;
+}
+.individual .data .list ul li {
+  margin-left: 25px;
+}
+.individual .details {
+  margin-top: 30px;
+}
+.individual .details p {
+  margin-top: 11px;
+}
+.individual .details p span {
+  color: #919191;
+}
+.individual .details ul {
+  list-style: none;
+}
+.individual .details ul li {
+  padding: 11px 0 0 11px;
+  color: #919191;
+}
+.individual .attribute {
+  margin-top: 15px;
+  padding: 15px 0;
+}
+.individual .minMaxAttr {
+  margin-bottom: 32px;
+}
+.individual .minMaxAttr p {
+  margin-top: 10px;
+  color: #919191;
+}
+.individual .down {
+  margin: 16px 0;
+}
+.individual .fileBox {
+  border: solid 1px #E1E1E1;
+  border-radius: 3px;
+  display: flex;
+  padding: 20px 50px;
+  align-items: center;
+  background-image: url(/assets/images/file.svg);
+  background-repeat: no-repeat;
+  color: #919191;
+}
+.individual .fileBox.short {
+  width: 287px;
+  height: 59px;
+  background-position: 5% 50%;
+}
+.individual .fileBox.long {
+  width: 586px;
+  height: 59px;
+  background-position: 3% 50%;
+}
+.individual .additional {
+  color: #919191;
+  line-height: 2em;
+}
+.individual .copy {
+  margin-top: 16px;
+}/*# sourceMappingURL=style.css.map */
