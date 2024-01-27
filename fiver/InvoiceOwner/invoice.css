@@ -1,0 +1,171 @@
+body {
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: 10px;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+h4 {
+  font-size: 10.5px;
+}
+
+@page {
+  size: A4;
+  margin: 2cm;
+}
+header {
+  top: 0;
+  page: auto;
+  line-height: 1.5;
+  background-color: #fff;
+}
+header .invoice-head {
+  display: flex;
+  justify-content: space-between;
+}
+header .invoice-head .info {
+  margin-left: 1cm;
+}
+header .invoice-head .info .address {
+  font-weight: 600;
+}
+header .invoice-head .info .address h3 {
+  margin: 0;
+  font-weight: 600;
+}
+header .invoice-head .date {
+  margin-left: auto;
+  align-self: flex-end;
+}
+header .invoice-head img {
+  width: 150px;
+  height: 150px;
+}
+header .invoice-bill .title {
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  bottom: 0;
+  page: auto;
+}
+footer .anouncement p {
+  font-weight: 300;
+}
+footer .bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .bottom .rules {
+  flex-basis: 30%;
+}
+footer .bottom .table {
+  height: auto;
+  flex-basis: 25%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+footer .bottom .table .row {
+  display: flex;
+  justify-content: space-between;
+}
+footer .bottom .table .row:last-child .cell {
+  border-bottom: 5px solid black;
+}
+footer .bottom .table .row .cell {
+  border-top: 5px solid black;
+  flex: 1;
+  padding: 10px;
+  margin: 0 10px;
+}
+
+.billing {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+}
+.billing .address-acount {
+  margin-right: 120px;
+  display: flex;
+  flex-direction: column;
+}
+.billing .address-acount .addr {
+  font-weight: 300;
+}
+.billing .balance {
+  flex-basis: 70%;
+}
+.billing .balance table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.billing .balance table tr td {
+  text-align: right;
+}
+.billing .balance table tr td:nth-child(even) {
+  font-weight: 100;
+}
+.billing .balance table .balance-due td:nth-child(2) {
+  border-top: 1px solid black;
+  border-bottom: 1px double black;
+}
+
+main table {
+  width: 100%;
+  border-collapse: collapse;
+}
+main table thead {
+  border-top: 2px solid black;
+  page: auto;
+}
+main table thead tr:nth-child(1),
+main table thead tr :nth-child(3) {
+  text-align: left;
+}
+
+footer {
+  background-color: #fff;
+  page: auto;
+}
+footer .anouncement p {
+  font-weight: 300;
+}
+footer .bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .bottom .rules {
+  flex-basis: 30%;
+}
+footer .bottom .table {
+  flex-basis: 25%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+footer .bottom .table .row {
+  display: flex;
+  justify-content: space-between;
+}
+footer .bottom .table .row:last-child .cell {
+  border-bottom: 5px solid black;
+}
+footer .bottom .table .row .cell {
+  border-top: 5px solid black;
+  flex: 1;
+  padding: 10px;
+  margin: 0 10px;
+}
+
+/*# sourceMappingURL=invoice.css.map */

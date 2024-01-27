@@ -1,0 +1,124 @@
+@page {
+ size: A4 landscape; 
+  margin:1cm 0;
+  counter-increment: page;
+}
+@page{
+  
+}
+
+@page :first {
+  .header {
+    display: flex;
+  }
+  
+}
+body{
+  font-size: 12px;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .title {
+  flex-basis: 33%;
+}
+
+.header .title h1 {
+  text-decoration: underline;
+}
+.header .date {
+  flex: 1;
+}
+
+.left-align {
+  text-align: left;
+}
+.center-align {
+  text-align: center;
+}
+body {
+  border: 0;
+  padding: 1cm;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+tr.content-row {
+  line-height: 3;
+}
+
+tr.content-row:nth-child(even) {
+  background-color: #f2f8ff;
+}
+tr.content-row td {
+  text-align: right;
+}
+
+tr.content-row td:nth-child(1) {
+  text-align: center;
+}
+
+tr.content-row td:nth-child(2),
+tr.content-row td:nth-child(3) {
+  text-align: left;
+}
+
+tr.detail-record {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  line-height: 2;
+}
+tr.detail-record td {
+  text-align: right;
+}
+tr.detail-record td:nth-child(1) {
+  text-align: left;
+}
+
+tr.detail-record td:nth-child(2) {
+  text-align: center;
+  font-weight: 600;
+}
+
+.table-head .table-foot {
+  page: auto;
+}
+.table-head {
+ 
+  border-bottom: 3px solid black;
+}
+.table-foot {
+  border-top: 2px double black;
+}
+.page-number .number::before {
+  content: counter(page);
+}
+
+tr > .page-number {
+  text-align: center;
+}
+tr > .date {
+  text-align: left;
+}
+thead{
+  display: table-header-group;
+  
+}
+tbody{
+  display: table-row-group;
+}
+tfoot {
+  display: table-footer-group;
+}
+tfoot tr td #number::after {
+  counter-increment: page;
+  content: "Page " counter(page);
+}
+tfoot tr td .total::after {
+  content: "of " counter(pages);
+}
